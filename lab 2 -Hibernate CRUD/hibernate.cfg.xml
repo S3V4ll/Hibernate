@@ -1,0 +1,41 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+	
+	<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+	<property name="connection.url">jdbc:mysql://uecfqlcnsw6l82np:0qxm8nmHwwutQuvvuq98@brpoz7mfxwl7bmd6p21x-mysql.services.clever-cloud.com:3306/brpoz7mfxwl7bmd6p21x</property>
+	<property name="connection.username">uecfqlcnsw6l82np</property>
+	<property name="connection.password">0qxm8nmHwwutQuvvuq98</property>
+	
+	
+	
+	
+	<!-- Pool: used for multi threading-->
+	<!-- collection of connections-->
+	
+	<!-- 1 connection at a time-->																
+	<property name ="connection.pool_size">1</property>
+	
+	
+	<!-- Language /dialect used-->
+	
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+	
+	<!-- Echo : message returned after action is executed Ex: Table created-->
+	
+	<property name="show_sql">true</property>
+
+	
+	<!-- Current session -->
+	
+	<property name="current_session_context_class">thread</property>
+	
+	</session-factory>
+
+
+</hibernate-configuration>
